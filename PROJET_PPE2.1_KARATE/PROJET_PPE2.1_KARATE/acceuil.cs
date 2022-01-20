@@ -25,7 +25,8 @@ namespace PROJET_PPE2._1_KARATE
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("La modification n'est pas disponible");
+            Frm_GestionMembre_M frm = new Frm_GestionMembre_M();
+            frm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

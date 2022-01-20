@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 namespace PROJET_PPE2._1_KARATE
 {
+    //Cette class est la class de connexion à la base de données
+    //En cas d'erreur, vérifier que le mot de pass (PASSWORD) et/ou le nom d'utilisateur (UID) sont exact.
     class connexion
     {
         public static MySqlConnection ConnectionBD()

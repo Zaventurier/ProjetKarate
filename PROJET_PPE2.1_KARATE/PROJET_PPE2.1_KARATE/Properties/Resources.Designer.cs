@@ -59,5 +59,15 @@ namespace PROJET_PPE2._1_KARATE.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recherche {
+            get {
+                object obj = ResourceManager.GetObject("recherche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
