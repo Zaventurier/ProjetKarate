@@ -1,11 +1,17 @@
-﻿namespace PROJET_PPE2._1_KARATE
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+namespace PROJET_PPE2._1_KARATE
 {
     class connexion
     {
         public static MySqlConnection ConnectionBD()
         {
             // Création de la chaîne de connexion
-            string connectionString = "SERVER=localhost; DATABASE=karaté; UID=root; PASSWORD=root";
+            string connectionString = "SERVER=localhost; DATABASE=karate; UID=root; PASSWORD=root";
             MySqlConnection conn = new MySqlConnection(connectionString);
             return conn;
         }
