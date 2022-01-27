@@ -40,24 +40,24 @@ namespace PROJET_PPE2._1_KARATE
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Txt_Ville = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Txt_CodePostal = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Txt_Adresse = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Txt_DateNaissance = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Txt_Prenom = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Txt_Nom = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Txt_NumClub = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Txt_NumLiscence = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Txt_NumLiscence = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Txt_NumClub = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Txt_Nom = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Txt_Prenom = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Txt_DateNaissance = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Txt_Adresse = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Txt_CodePostal = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Txt_Ville = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -195,6 +195,142 @@ namespace PROJET_PPE2._1_KARATE
             this.groupBox5.TabIndex = 21;
             this.groupBox5.TabStop = false;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 409);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(42, 17);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Ville :";
+            // 
+            // Txt_Ville
+            // 
+            this.Txt_Ville.Location = new System.Drawing.Point(194, 406);
+            this.Txt_Ville.Name = "Txt_Ville";
+            this.Txt_Ville.Size = new System.Drawing.Size(225, 22);
+            this.Txt_Ville.TabIndex = 16;
+            this.Txt_Ville.TextChanged += new System.EventHandler(this.Txt_Ville_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 356);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 17);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Code postal :";
+            // 
+            // Txt_CodePostal
+            // 
+            this.Txt_CodePostal.Location = new System.Drawing.Point(194, 356);
+            this.Txt_CodePostal.Name = "Txt_CodePostal";
+            this.Txt_CodePostal.Size = new System.Drawing.Size(225, 22);
+            this.Txt_CodePostal.TabIndex = 14;
+            this.Txt_CodePostal.TextChanged += new System.EventHandler(this.Txt_CodePostal_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 306);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 17);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Adresse :";
+            // 
+            // Txt_Adresse
+            // 
+            this.Txt_Adresse.Location = new System.Drawing.Point(194, 303);
+            this.Txt_Adresse.Name = "Txt_Adresse";
+            this.Txt_Adresse.Size = new System.Drawing.Size(225, 22);
+            this.Txt_Adresse.TabIndex = 12;
+            this.Txt_Adresse.TextChanged += new System.EventHandler(this.Txt_Adresse_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 255);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(134, 17);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Date de naissance :";
+            // 
+            // Txt_DateNaissance
+            // 
+            this.Txt_DateNaissance.Location = new System.Drawing.Point(194, 250);
+            this.Txt_DateNaissance.Name = "Txt_DateNaissance";
+            this.Txt_DateNaissance.Size = new System.Drawing.Size(225, 22);
+            this.Txt_DateNaissance.TabIndex = 10;
+            this.Txt_DateNaissance.TextChanged += new System.EventHandler(this.Txt_DateNaissance_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 203);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 17);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Prénom :";
+            // 
+            // Txt_Prenom
+            // 
+            this.Txt_Prenom.Location = new System.Drawing.Point(194, 198);
+            this.Txt_Prenom.Name = "Txt_Prenom";
+            this.Txt_Prenom.Size = new System.Drawing.Size(225, 22);
+            this.Txt_Prenom.TabIndex = 8;
+            this.Txt_Prenom.TextChanged += new System.EventHandler(this.Txt_Prenom_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Nom :";
+            // 
+            // Txt_Nom
+            // 
+            this.Txt_Nom.Location = new System.Drawing.Point(194, 141);
+            this.Txt_Nom.Name = "Txt_Nom";
+            this.Txt_Nom.Size = new System.Drawing.Size(225, 22);
+            this.Txt_Nom.TabIndex = 6;
+            this.Txt_Nom.TextChanged += new System.EventHandler(this.Txt_Nom_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 92);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 17);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Numéro Club :";
+            // 
+            // Txt_NumClub
+            // 
+            this.Txt_NumClub.Location = new System.Drawing.Point(194, 87);
+            this.Txt_NumClub.Name = "Txt_NumClub";
+            this.Txt_NumClub.Size = new System.Drawing.Size(225, 22);
+            this.Txt_NumClub.TabIndex = 4;
+            this.Txt_NumClub.TextChanged += new System.EventHandler(this.Txt_NumClub_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Numéro Liscence :";
+            // 
+            // Txt_NumLiscence
+            // 
+            this.Txt_NumLiscence.Location = new System.Drawing.Point(194, 36);
+            this.Txt_NumLiscence.Name = "Txt_NumLiscence";
+            this.Txt_NumLiscence.Size = new System.Drawing.Size(225, 22);
+            this.Txt_NumLiscence.TabIndex = 2;
+            this.Txt_NumLiscence.TextChanged += new System.EventHandler(this.Txt_NumLiscence_TextChanged);
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(227, 467);
@@ -213,142 +349,6 @@ namespace PROJET_PPE2._1_KARATE
             this.button2.Text = "Modifier";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Txt_NumLiscence
-            // 
-            this.Txt_NumLiscence.Location = new System.Drawing.Point(194, 36);
-            this.Txt_NumLiscence.Name = "Txt_NumLiscence";
-            this.Txt_NumLiscence.Size = new System.Drawing.Size(225, 22);
-            this.Txt_NumLiscence.TabIndex = 2;
-            this.Txt_NumLiscence.TextChanged += new System.EventHandler(this.Txt_NumLiscence_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Numéro Liscence :";
-            // 
-            // Txt_NumClub
-            // 
-            this.Txt_NumClub.Location = new System.Drawing.Point(194, 87);
-            this.Txt_NumClub.Name = "Txt_NumClub";
-            this.Txt_NumClub.Size = new System.Drawing.Size(225, 22);
-            this.Txt_NumClub.TabIndex = 4;
-            this.Txt_NumClub.TextChanged += new System.EventHandler(this.Txt_NumClub_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 92);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Numéro Club :";
-            // 
-            // Txt_Nom
-            // 
-            this.Txt_Nom.Location = new System.Drawing.Point(194, 141);
-            this.Txt_Nom.Name = "Txt_Nom";
-            this.Txt_Nom.Size = new System.Drawing.Size(225, 22);
-            this.Txt_Nom.TabIndex = 6;
-            this.Txt_Nom.TextChanged += new System.EventHandler(this.Txt_Nom_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 144);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Nom :";
-            // 
-            // Txt_Prenom
-            // 
-            this.Txt_Prenom.Location = new System.Drawing.Point(194, 198);
-            this.Txt_Prenom.Name = "Txt_Prenom";
-            this.Txt_Prenom.Size = new System.Drawing.Size(225, 22);
-            this.Txt_Prenom.TabIndex = 8;
-            this.Txt_Prenom.TextChanged += new System.EventHandler(this.Txt_Prenom_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 203);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Prénom :";
-            // 
-            // Txt_DateNaissance
-            // 
-            this.Txt_DateNaissance.Location = new System.Drawing.Point(194, 250);
-            this.Txt_DateNaissance.Name = "Txt_DateNaissance";
-            this.Txt_DateNaissance.Size = new System.Drawing.Size(225, 22);
-            this.Txt_DateNaissance.TabIndex = 10;
-            this.Txt_DateNaissance.TextChanged += new System.EventHandler(this.Txt_DateNaissance_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 255);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(134, 17);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Date de naissance :";
-            // 
-            // Txt_Adresse
-            // 
-            this.Txt_Adresse.Location = new System.Drawing.Point(194, 303);
-            this.Txt_Adresse.Name = "Txt_Adresse";
-            this.Txt_Adresse.Size = new System.Drawing.Size(225, 22);
-            this.Txt_Adresse.TabIndex = 12;
-            this.Txt_Adresse.TextChanged += new System.EventHandler(this.Txt_Adresse_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 306);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 17);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Adresse :";
-            // 
-            // Txt_CodePostal
-            // 
-            this.Txt_CodePostal.Location = new System.Drawing.Point(194, 356);
-            this.Txt_CodePostal.Name = "Txt_CodePostal";
-            this.Txt_CodePostal.Size = new System.Drawing.Size(225, 22);
-            this.Txt_CodePostal.TabIndex = 14;
-            this.Txt_CodePostal.TextChanged += new System.EventHandler(this.Txt_CodePostal_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 356);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 17);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Code postal :";
-            // 
-            // Txt_Ville
-            // 
-            this.Txt_Ville.Location = new System.Drawing.Point(194, 406);
-            this.Txt_Ville.Name = "Txt_Ville";
-            this.Txt_Ville.Size = new System.Drawing.Size(225, 22);
-            this.Txt_Ville.TabIndex = 16;
-            this.Txt_Ville.TextChanged += new System.EventHandler(this.Txt_Ville_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 409);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 17);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Ville :";
-            // 
             // Frm_GestionMembre_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,6 +361,7 @@ namespace PROJET_PPE2._1_KARATE
             this.Controls.Add(this.GroupBox1);
             this.Name = "Frm_GestionMembre_M";
             this.Text = "Frm_GestionMembre_M";
+            this.Load += new System.EventHandler(this.Frm_GestionMembre_M_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

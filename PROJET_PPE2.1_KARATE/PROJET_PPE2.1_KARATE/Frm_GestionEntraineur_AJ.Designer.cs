@@ -291,7 +291,7 @@
             this.Controls.Add(this.GroupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_GestionEntraineur_AJ";
-            this.Text = "Formulaire_charte_graphique";
+            this.Text = "Ajout membre";
             this.Load += new System.EventHandler(this.Frm_GestionEntraineur_AJ_Load);
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox2.ResumeLayout(false);

@@ -128,5 +128,10 @@ namespace PROJET_PPE2._1_KARATE
         {
 
         }
+
+        private void Frm_GestionMembre_M_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
