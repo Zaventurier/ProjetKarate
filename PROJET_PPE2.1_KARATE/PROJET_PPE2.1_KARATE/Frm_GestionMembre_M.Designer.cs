@@ -31,14 +31,8 @@ namespace PROJET_PPE2._1_KARATE
         {
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.Label1 = new System.Windows.Forms.Label();
-            this.Txt_RechercheNom = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Cmd_Recherche = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Txt_RecherchePrenom = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.Txt_Ville = new System.Windows.Forms.TextBox();
@@ -58,10 +52,11 @@ namespace PROJET_PPE2._1_KARATE
             this.Txt_NumLiscence = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.GroupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBox1
@@ -85,17 +80,8 @@ namespace PROJET_PPE2._1_KARATE
             this.Label1.TabIndex = 10;
             this.Label1.Text = "GESTION DES MEMBRES [MODIFIER / SUPPRIMER]";
             // 
-            // Txt_RechercheNom
-            // 
-            this.Txt_RechercheNom.Location = new System.Drawing.Point(147, 20);
-            this.Txt_RechercheNom.Name = "Txt_RechercheNom";
-            this.Txt_RechercheNom.Size = new System.Drawing.Size(254, 22);
-            this.Txt_RechercheNom.TabIndex = 15;
-            this.Txt_RechercheNom.TextChanged += new System.EventHandler(this.Txt_Recherche_TextChanged);
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(12, 83);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -104,68 +90,16 @@ namespace PROJET_PPE2._1_KARATE
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 29);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Recherche :";
-            // 
-            // Cmd_Recherche
-            // 
-            this.Cmd_Recherche.BackgroundImage = global::PROJET_PPE2._1_KARATE.Properties.Resources.recherche;
-            this.Cmd_Recherche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Cmd_Recherche.Location = new System.Drawing.Point(147, 136);
-            this.Cmd_Recherche.Name = "Cmd_Recherche";
-            this.Cmd_Recherche.Size = new System.Drawing.Size(82, 74);
-            this.Cmd_Recherche.TabIndex = 17;
-            this.Cmd_Recherche.UseVisualStyleBackColor = true;
-            this.Cmd_Recherche.Click += new System.EventHandler(this.Cmd_Recherche_Click);
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.Txt_RecherchePrenom);
-            this.groupBox3.Controls.Add(this.Cmd_Recherche);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.Txt_RechercheNom);
+            this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Location = new System.Drawing.Point(12, 145);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(407, 215);
+            this.groupBox3.Size = new System.Drawing.Size(407, 316);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
-            // 
-            // Txt_RecherchePrenom
-            // 
-            this.Txt_RecherchePrenom.Location = new System.Drawing.Point(147, 79);
-            this.Txt_RecherchePrenom.Name = "Txt_RecherchePrenom";
-            this.Txt_RecherchePrenom.Size = new System.Drawing.Size(254, 22);
-            this.Txt_RecherchePrenom.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 17);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Prénom :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 17);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Nom :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox5
             // 
@@ -349,6 +283,17 @@ namespace PROJET_PPE2._1_KARATE
             this.button2.Text = "Modifier";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 30);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(356, 259);
+            this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // Frm_GestionMembre_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -364,12 +309,10 @@ namespace PROJET_PPE2._1_KARATE
             this.Load += new System.EventHandler(this.Frm_GestionMembre_M_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,14 +321,8 @@ namespace PROJET_PPE2._1_KARATE
 
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.Label Label1;
-        private System.Windows.Forms.TextBox Txt_RechercheNom;
         internal System.Windows.Forms.GroupBox groupBox2;
-        internal System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Cmd_Recherche;
         internal System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Txt_RecherchePrenom;
         internal System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -405,5 +342,6 @@ namespace PROJET_PPE2._1_KARATE
         private System.Windows.Forms.TextBox Txt_DateNaissance;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Txt_Prenom;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

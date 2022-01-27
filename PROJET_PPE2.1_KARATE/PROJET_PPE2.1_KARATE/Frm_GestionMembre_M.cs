@@ -36,16 +36,6 @@ namespace PROJET_PPE2._1_KARATE
             //Va mettre les valeurs de la requête dans chaque TexteBox
 
 
-
-
-
-
-
-
-
-
-
-
             //Numéro de la Liscence
             Txt_NumLiscence.Text = "NUM_LISCENCE";
             //Numéro du club
@@ -130,6 +120,11 @@ namespace PROJET_PPE2._1_KARATE
         }
 
         private void Frm_GestionMembre_M_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
