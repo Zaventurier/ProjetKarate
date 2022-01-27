@@ -23,47 +23,6 @@ namespace PROJET_PPE2._1_KARATE
 
         }
 
-        private void Cmd_Recherche_Click(object sender, EventArgs e)
-        {
-            //Grid_Membre.Rows.Clear();
-            MySqlConnection conn = connexion.ConnectionBD();
-            conn.Open();
-            //Requête à revoir
-            string req = "SELECT * FROM membre where NOM_MEMBRE = @NomMembre AND PRENOM_MEMBRE = @PrenomMembre";
-            MySqlCommand cmd = new MySqlCommand(req, conn);
-            cmd.Parameters.AddWithValue("@NomMembre", Txt_RechercheNom.Text);
-            cmd.Parameters.AddWithValue("@PrenomMembre", Txt_RecherchePrenom.Text);
-            //Va mettre les valeurs de la requête dans chaque TexteBox
-
-
-            //Numéro de la Liscence
-            Txt_NumLiscence.Text = "NUM_LISCENCE";
-            //Numéro du club
-            Txt_NumClub.Text = "NUM_CLUB";
-            //Nom du membre
-            Txt_Nom.Text = "@NomMembre";
-            //Prénom du membre
-            Txt_Prenom.Text = "@PrenomMembre";
-            //Prénom du membre
-            Txt_DateNaissance.Text = "DATE_NAISSANCE";
-            //Date naissance membre
-            Txt_Adresse.Text = "ADR_RUE_MEMBRE";
-            //Adresse membre
-            Txt_CodePostal.Text = "CODE_POST_MEMBRE";
-            //Code postal membre
-            Txt_Ville.Text = "ADR_VILLE_MEMBRE";
-
-
-            //MySqlDataReader reader = cmd.ExecuteReader();
-            //while (reader.Read())
-            //{
-            //string idQuestion = reader["NOM_MEMBRE"].ToString();
-            //string nomQuestion = reader["PRENOM_MEMBRE"].ToString();
-            //Grid_Membre.Rows.Add(idQuestion, nomQuestion);
-            //}
-            conn.Close();
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -126,7 +85,52 @@ namespace PROJET_PPE2._1_KARATE
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int ligne = e.RowIndex;
+            Txt_NumLiscence.Text = Grid_Membre.Rows[ligne].Cells[0].Value.ToString();
+            Txt_NumClub.Text = Grid_Membre.Rows[ligne].Cells[1].Value.ToString(); ;
+            Txt_Nom.Text = Grid_Membre.Rows[ligne].Cells[2].Value.ToString(); ;
+            Txt_Prenom.Text = Grid_Membre.Rows[ligne].Cells[3].Value.ToString(); ;
+            Txt_DateNaissance.Text = Grid_Membre.Rows[ligne].Cells[4].Value.ToString();
+            Txt_Adresse.Text = Grid_Membre.Rows[ligne].Cells[5].Value.ToString(); ;
+            Txt_CodePostal.Text = Grid_Membre.Rows[ligne].Cells[6].Value.ToString(); ;
+            Txt_Ville.Text = Grid_Membre.Rows[ligne].Cells[7].Value.ToString(); ;
 
+            //MessageBox.Show("TEST", Grid_Membre.Rows[1].Cells[1].Value.ToString());
+        }
+
+        private void Btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Grid_Membre.Rows.Clear();
+                MySqlConnection conn = connexion.ConnectionBD();
+                conn.Open();
+                string sql2 = "SELECT * FROM membre";
+                MySqlCommand cmd = new MySqlCommand(sql2, conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string NUM_LICENCE = reader["NUM_LICENCE"].ToString();
+                    string NUM_CLUB = reader["NUM_CLUB"].ToString();
+                    string NOM_MEMBRE = reader["NOM_MEMBRE"].ToString();
+                    string PRENOM_MEMBRE = reader["PRENOM_MEMBRE"].ToString();
+                    string DATE_NAISSANCE = reader["DATE_NAISSANCE"].ToString();
+                    string ADR_RUE_MEMBRE = reader["ADR_RUE_MEMBRE"].ToString();
+                    string CODE_POST_MEMBRE = reader["CODE_POST_MEMBRE"].ToString();
+                    string ADR_VILLE_MEMBRE = reader["ADR_VILLE_MEMBRE"].ToString();
+                    Grid_Membre.Rows.Add(NUM_LICENCE, NUM_CLUB, NOM_MEMBRE, PRENOM_MEMBRE, DATE_NAISSANCE, ADR_RUE_MEMBRE, CODE_POST_MEMBRE, ADR_VILLE_MEMBRE);
+                }
+                conn.Close();
+            }
+
+        //Bouton modifier
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Code à venir
+        }
+
+        //Bouton supprimer
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Code à venir
         }
     }
-}
+    }
