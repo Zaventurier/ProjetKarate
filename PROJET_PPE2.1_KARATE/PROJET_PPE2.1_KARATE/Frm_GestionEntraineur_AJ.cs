@@ -101,10 +101,5 @@ namespace PROJET_PPE2._1_KARATE
         {
 
         }
-
-        private void Frm_GestionEntraineur_AJ_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
