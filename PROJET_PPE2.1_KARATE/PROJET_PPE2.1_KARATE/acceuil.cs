@@ -17,23 +17,24 @@ namespace PROJET_PPE2._1_KARATE
             InitializeComponent();
         }
 
+        //Bouton ajouter
         private void Button1_Click(object sender, EventArgs e)
         {
             Frm_GestionEntraineur_AJ frm = new Frm_GestionEntraineur_AJ();
             frm.Show();
+
         }
 
+        //Bouton modifier
         private void button4_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("La modification est temporairement désactiver");
             Frm_GestionMembre_M frm = new Frm_GestionMembre_M();
             frm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("La suppression n'est pas disponible");
-        }
 
+        //Bouton consultation des données
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("La consultation des liscences n'est pas disponible");
@@ -42,6 +43,11 @@ namespace PROJET_PPE2._1_KARATE
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void acceuil_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
