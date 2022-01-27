@@ -95,6 +95,9 @@
     <EmbeddedResource Include="acceuil.resx">
       <DependentUpon>acceuil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_GestionEntraineur_AJ.resx">
       <DependentUpon>Frm_GestionEntraineur_AJ.cs</DependentUpon>
     </EmbeddedResource>
