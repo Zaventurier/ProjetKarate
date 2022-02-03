@@ -85,6 +85,7 @@ namespace PROJET_PPE2._1_KARATE
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Ces lignes de codes permettent 
             int ligne = e.RowIndex;
             Txt_NumLiscence.Text = Grid_Membre.Rows[ligne].Cells[0].Value.ToString();
             Txt_NumClub.Text = Grid_Membre.Rows[ligne].Cells[1].Value.ToString(); ;
@@ -124,13 +125,62 @@ namespace PROJET_PPE2._1_KARATE
         //Bouton modifier
         private void button2_Click(object sender, EventArgs e)
         {
-            //Code à venir
+            MySqlConnection conn2 = connexion.ConnectionBD();
+            conn2.Open();
+            string req2 = "UPDATE membre SET Colonne1 = @NumLicence, Colonne2 = @NumClub, Colonne3 = @NomMembre, Colonne4 = @PrenomMembre, Colonne5 = @DateNaissance, Colonne6 = @AdresseMembre, Colonne7 = @CodePostal, Colonne8 = @VilleMembre";
+            MySqlCommand cmd = new MySqlCommand(req2, conn2);
+            cmd.Parameters.AddWithValue("@NumLicence", Txt_NumLiscence.Text);
+            cmd.Parameters.AddWithValue("@NumClub", Txt_NumClub.Text);
+            cmd.Parameters.AddWithValue("@NomMembre", Txt_Nom.Text);
+            cmd.Parameters.AddWithValue("@PrenomMembre", Txt_Prenom.Text);
+            cmd.Parameters.AddWithValue("@DateNaissance", Txt_DateNaissance.Text);
+            cmd.Parameters.AddWithValue("@AdresseMembre", Txt_Adresse.Text);
+            cmd.Parameters.AddWithValue("@CodePostal", Txt_CodePostal.Text);
+            cmd.Parameters.AddWithValue("@VilleMembre", Txt_Ville.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Modification effectué avec succés !", "Modification");
+            Txt_NumLiscence.Text = "";
+            Txt_NumClub.Text = "";
+            Txt_Nom.Text = "";
+            Txt_Prenom.Text = "";
+            Txt_DateNaissance.Text = "";
+            Txt_Adresse.Text = "";
+            Txt_CodePostal.Text = "";
+            Txt_Ville.Text = "";
+            conn2.Close();
+
         }
 
         //Bouton supprimer
         private void button3_Click(object sender, EventArgs e)
         {
-            //Code à venir
+            MySqlConnection conn3 = connexion.ConnectionBD();
+            conn3.Open();
+            string req4 = "Select * from inscription where NUM_LICENCE = @NumLicence";
+            MySqlCommand cmd = new MySqlCommand(req4, conn3);
+            cmd.Parameters.AddWithValue("@NumLicence", Txt_NumLiscence.Text);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read()== true)
+            {
+                MessageBox.Show("Erreur : membre déjà inscrit !", "Erreur suppression");
+                return;
+            }
+            conn3.Close();
+            conn3.Open();
+            string req3 = "Delete from membre where NUM_LICENCE = @NumLicence";
+            MySqlCommand cmd1 = new MySqlCommand(req3, conn3);
+            cmd1.Parameters.AddWithValue("@NumLicence", Txt_NumLiscence.Text);
+            cmd1.ExecuteNonQuery();
+            //MessageBox.Show("L'enregistrement concernant Txt_Nom.Text , Txt_Prenom.Text va être supprimé ! Voulez vous continuez ?", "Suppresion");
+            Txt_NumLiscence.Text = "";
+            Txt_NumClub.Text = "";
+            Txt_Nom.Text = "";
+            Txt_Prenom.Text = "";
+            Txt_DateNaissance.Text = "";
+            Txt_Adresse.Text = "";
+            Txt_CodePostal.Text = "";
+            Txt_Ville.Text = "";
+            conn3.Close();
         }
     }
     }

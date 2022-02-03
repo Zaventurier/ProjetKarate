@@ -75,7 +75,7 @@ namespace PROJET_PPE2._1_KARATE
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GroupBox1.Size = new System.Drawing.Size(668, 58);
+            this.GroupBox1.Size = new System.Drawing.Size(703, 58);
             this.GroupBox1.TabIndex = 14;
             this.GroupBox1.TabStop = false;
             // 
