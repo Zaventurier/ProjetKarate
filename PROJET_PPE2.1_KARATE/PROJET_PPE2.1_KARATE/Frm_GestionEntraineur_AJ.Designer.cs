@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
-            this.Cmd_Fermer = new System.Windows.Forms.Button();
             this.Cmd_Ajouter = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.Txt_CodePostal = new System.Windows.Forms.TextBox();
@@ -57,7 +56,6 @@
             // 
             // GroupBox3
             // 
-            this.GroupBox3.Controls.Add(this.Cmd_Fermer);
             this.GroupBox3.Controls.Add(this.Cmd_Ajouter);
             this.GroupBox3.Location = new System.Drawing.Point(99, 405);
             this.GroupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -67,20 +65,9 @@
             this.GroupBox3.TabIndex = 15;
             this.GroupBox3.TabStop = false;
             // 
-            // Cmd_Fermer
-            // 
-            this.Cmd_Fermer.Location = new System.Drawing.Point(275, 20);
-            this.Cmd_Fermer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cmd_Fermer.Name = "Cmd_Fermer";
-            this.Cmd_Fermer.Size = new System.Drawing.Size(173, 34);
-            this.Cmd_Fermer.TabIndex = 1;
-            this.Cmd_Fermer.Text = "FERMER";
-            this.Cmd_Fermer.UseVisualStyleBackColor = true;
-            this.Cmd_Fermer.Click += new System.EventHandler(this.Cmd_Fermer_Click);
-            // 
             // Cmd_Ajouter
             // 
-            this.Cmd_Ajouter.Location = new System.Drawing.Point(71, 20);
+            this.Cmd_Ajouter.Location = new System.Drawing.Point(165, 19);
             this.Cmd_Ajouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cmd_Ajouter.Name = "Cmd_Ajouter";
             this.Cmd_Ajouter.Size = new System.Drawing.Size(178, 34);
@@ -305,7 +292,6 @@
         #endregion
 
         internal System.Windows.Forms.GroupBox GroupBox3;
-        internal System.Windows.Forms.Button Cmd_Fermer;
         internal System.Windows.Forms.Button Cmd_Ajouter;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.TextBox Txt_Prenom;
