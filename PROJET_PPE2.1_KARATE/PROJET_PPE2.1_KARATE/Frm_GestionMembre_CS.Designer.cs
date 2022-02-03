@@ -42,25 +42,24 @@ namespace PROJET_PPE2._1_KARATE
             this.CODE_POST_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ADR_VILLE_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.Btn_Refresh = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.PhotoMembre = new System.Windows.Forms.PictureBox();
-            this.lbl_NumLicence = new System.Windows.Forms.Label();
-            this.lbl_PrenomMembre = new System.Windows.Forms.Label();
+            this.lbl_NumClub = new System.Windows.Forms.Label();
             this.lbl_NumLiscence = new System.Windows.Forms.Label();
             this.lbl_NomMembre = new System.Windows.Forms.Label();
-            this.lbl_DateNaissance = new System.Windows.Forms.Label();
-            this.lbl_AdresseMembre = new System.Windows.Forms.Label();
-            this.lbl_CodePostal = new System.Windows.Forms.Label();
             this.lbl_VilleMembre = new System.Windows.Forms.Label();
+            this.lbl_CodePostal = new System.Windows.Forms.Label();
+            this.lbl_AdresseMembre = new System.Windows.Forms.Label();
+            this.lbl_DateNaissance = new System.Windows.Forms.Label();
+            this.lbl_PrenomMembre = new System.Windows.Forms.Label();
+            this.lbl_NumLicence = new System.Windows.Forms.Label();
+            this.PhotoMembre = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lbl_NumClub = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).BeginInit();
@@ -92,7 +91,6 @@ namespace PROJET_PPE2._1_KARATE
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Btn_Refresh);
             this.groupBox2.Controls.Add(this.Grid_Membre);
             this.groupBox2.Location = new System.Drawing.Point(46, 104);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -206,104 +204,14 @@ namespace PROJET_PPE2._1_KARATE
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             // 
-            // Btn_Refresh
+            // lbl_NumClub
             // 
-            this.Btn_Refresh.BackgroundImage = global::PROJET_PPE2._1_KARATE.Properties.Resources.refresh;
-            this.Btn_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_Refresh.Location = new System.Drawing.Point(249, 20);
-            this.Btn_Refresh.Name = "Btn_Refresh";
-            this.Btn_Refresh.Size = new System.Drawing.Size(73, 57);
-            this.Btn_Refresh.TabIndex = 23;
-            this.Btn_Refresh.UseVisualStyleBackColor = true;
-            this.Btn_Refresh.Click += new System.EventHandler(this.Btn_Refresh_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "NUMERO DE LICENCE :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "NOM MEMBRE :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "PRENOM MEMBRE :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 157);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "DATE NAISSANCE :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 17);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "ADRESSE MEMBRE :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 225);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 17);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "CODE POSTAL :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 258);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 17);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "VILLE MEMBRE :";
-            // 
-            // PhotoMembre
-            // 
-            this.PhotoMembre.Location = new System.Drawing.Point(346, 20);
-            this.PhotoMembre.Name = "PhotoMembre";
-            this.PhotoMembre.Size = new System.Drawing.Size(250, 310);
-            this.PhotoMembre.TabIndex = 4;
-            this.PhotoMembre.TabStop = false;
-            // 
-            // lbl_NumLicence
-            // 
-            this.lbl_NumLicence.AutoSize = true;
-            this.lbl_NumLicence.Location = new System.Drawing.Point(190, 40);
-            this.lbl_NumLicence.Name = "lbl_NumLicence";
-            this.lbl_NumLicence.Size = new System.Drawing.Size(0, 17);
-            this.lbl_NumLicence.TabIndex = 18;
-            // 
-            // lbl_PrenomMembre
-            // 
-            this.lbl_PrenomMembre.AutoSize = true;
-            this.lbl_PrenomMembre.Location = new System.Drawing.Point(168, 123);
-            this.lbl_PrenomMembre.Name = "lbl_PrenomMembre";
-            this.lbl_PrenomMembre.Size = new System.Drawing.Size(0, 17);
-            this.lbl_PrenomMembre.TabIndex = 18;
-            this.lbl_PrenomMembre.Click += new System.EventHandler(this.lbl_PrenomMembre_Click);
+            this.lbl_NumClub.AutoSize = true;
+            this.lbl_NumClub.Location = new System.Drawing.Point(165, 49);
+            this.lbl_NumClub.Name = "lbl_NumClub";
+            this.lbl_NumClub.Size = new System.Drawing.Size(0, 17);
+            this.lbl_NumClub.TabIndex = 18;
+            this.lbl_NumClub.Click += new System.EventHandler(this.lbl_NumLiscence_Click);
             // 
             // lbl_NumLiscence
             // 
@@ -323,23 +231,14 @@ namespace PROJET_PPE2._1_KARATE
             this.lbl_NomMembre.TabIndex = 18;
             this.lbl_NomMembre.Click += new System.EventHandler(this.lbl_NomMembre_Click);
             // 
-            // lbl_DateNaissance
+            // lbl_VilleMembre
             // 
-            this.lbl_DateNaissance.AutoSize = true;
-            this.lbl_DateNaissance.Location = new System.Drawing.Point(163, 157);
-            this.lbl_DateNaissance.Name = "lbl_DateNaissance";
-            this.lbl_DateNaissance.Size = new System.Drawing.Size(0, 17);
-            this.lbl_DateNaissance.TabIndex = 18;
-            this.lbl_DateNaissance.Click += new System.EventHandler(this.lbl_DateNaissance_Click);
-            // 
-            // lbl_AdresseMembre
-            // 
-            this.lbl_AdresseMembre.AutoSize = true;
-            this.lbl_AdresseMembre.Location = new System.Drawing.Point(173, 193);
-            this.lbl_AdresseMembre.Name = "lbl_AdresseMembre";
-            this.lbl_AdresseMembre.Size = new System.Drawing.Size(0, 17);
-            this.lbl_AdresseMembre.TabIndex = 18;
-            this.lbl_AdresseMembre.Click += new System.EventHandler(this.lbl_AdresseMembre_Click);
+            this.lbl_VilleMembre.AutoSize = true;
+            this.lbl_VilleMembre.Location = new System.Drawing.Point(145, 258);
+            this.lbl_VilleMembre.Name = "lbl_VilleMembre";
+            this.lbl_VilleMembre.Size = new System.Drawing.Size(0, 17);
+            this.lbl_VilleMembre.TabIndex = 18;
+            this.lbl_VilleMembre.Click += new System.EventHandler(this.lbl_VilleMembre_Click);
             // 
             // lbl_CodePostal
             // 
@@ -350,14 +249,102 @@ namespace PROJET_PPE2._1_KARATE
             this.lbl_CodePostal.TabIndex = 18;
             this.lbl_CodePostal.Click += new System.EventHandler(this.lbl_CodePostal_Click);
             // 
-            // lbl_VilleMembre
+            // lbl_AdresseMembre
             // 
-            this.lbl_VilleMembre.AutoSize = true;
-            this.lbl_VilleMembre.Location = new System.Drawing.Point(145, 258);
-            this.lbl_VilleMembre.Name = "lbl_VilleMembre";
-            this.lbl_VilleMembre.Size = new System.Drawing.Size(0, 17);
-            this.lbl_VilleMembre.TabIndex = 18;
-            this.lbl_VilleMembre.Click += new System.EventHandler(this.lbl_VilleMembre_Click);
+            this.lbl_AdresseMembre.AutoSize = true;
+            this.lbl_AdresseMembre.Location = new System.Drawing.Point(173, 193);
+            this.lbl_AdresseMembre.Name = "lbl_AdresseMembre";
+            this.lbl_AdresseMembre.Size = new System.Drawing.Size(0, 17);
+            this.lbl_AdresseMembre.TabIndex = 18;
+            this.lbl_AdresseMembre.Click += new System.EventHandler(this.lbl_AdresseMembre_Click);
+            // 
+            // lbl_DateNaissance
+            // 
+            this.lbl_DateNaissance.AutoSize = true;
+            this.lbl_DateNaissance.Location = new System.Drawing.Point(163, 157);
+            this.lbl_DateNaissance.Name = "lbl_DateNaissance";
+            this.lbl_DateNaissance.Size = new System.Drawing.Size(0, 17);
+            this.lbl_DateNaissance.TabIndex = 18;
+            this.lbl_DateNaissance.Click += new System.EventHandler(this.lbl_DateNaissance_Click);
+            // 
+            // lbl_PrenomMembre
+            // 
+            this.lbl_PrenomMembre.AutoSize = true;
+            this.lbl_PrenomMembre.Location = new System.Drawing.Point(168, 123);
+            this.lbl_PrenomMembre.Name = "lbl_PrenomMembre";
+            this.lbl_PrenomMembre.Size = new System.Drawing.Size(0, 17);
+            this.lbl_PrenomMembre.TabIndex = 18;
+            this.lbl_PrenomMembre.Click += new System.EventHandler(this.lbl_PrenomMembre_Click);
+            // 
+            // lbl_NumLicence
+            // 
+            this.lbl_NumLicence.AutoSize = true;
+            this.lbl_NumLicence.Location = new System.Drawing.Point(190, 40);
+            this.lbl_NumLicence.Name = "lbl_NumLicence";
+            this.lbl_NumLicence.Size = new System.Drawing.Size(0, 17);
+            this.lbl_NumLicence.TabIndex = 18;
+            // 
+            // PhotoMembre
+            // 
+            this.PhotoMembre.Location = new System.Drawing.Point(346, 20);
+            this.PhotoMembre.Name = "PhotoMembre";
+            this.PhotoMembre.Size = new System.Drawing.Size(250, 310);
+            this.PhotoMembre.TabIndex = 4;
+            this.PhotoMembre.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(23, 258);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 17);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "VILLE MEMBRE :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(23, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 17);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "CODE POSTAL :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 17);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "ADRESSE MEMBRE :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 157);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "DATE NAISSANCE :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 17);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "PRENOM MEMBRE :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "NOM MEMBRE :";
             // 
             // label9
             // 
@@ -368,14 +355,14 @@ namespace PROJET_PPE2._1_KARATE
             this.label9.TabIndex = 0;
             this.label9.Text = "NUMERO DU CLUB :";
             // 
-            // lbl_NumClub
+            // label2
             // 
-            this.lbl_NumClub.AutoSize = true;
-            this.lbl_NumClub.Location = new System.Drawing.Point(165, 49);
-            this.lbl_NumClub.Name = "lbl_NumClub";
-            this.lbl_NumClub.Size = new System.Drawing.Size(0, 17);
-            this.lbl_NumClub.TabIndex = 18;
-            this.lbl_NumClub.Click += new System.EventHandler(this.lbl_NumLiscence_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "NUMERO DE LICENCE :";
             // 
             // Frm_GestionMembre_CS
             // 
@@ -388,6 +375,7 @@ namespace PROJET_PPE2._1_KARATE
             this.Controls.Add(this.GroupBox1);
             this.Name = "Frm_GestionMembre_CS";
             this.Text = "Frm_GestionMembre_CS";
+            this.Load += new System.EventHandler(this.Frm_GestionMembre_CS_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -414,7 +402,6 @@ namespace PROJET_PPE2._1_KARATE
         private System.Windows.Forms.DataGridViewTextBoxColumn CODE_POST_MEMBRE;
         private System.Windows.Forms.DataGridViewTextBoxColumn ADR_VILLE_MEMBRE;
         internal System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button Btn_Refresh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

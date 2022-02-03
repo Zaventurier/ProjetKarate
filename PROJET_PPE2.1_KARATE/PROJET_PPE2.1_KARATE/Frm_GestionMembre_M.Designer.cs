@@ -31,9 +31,16 @@ namespace PROJET_PPE2._1_KARATE
         {
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.Label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Grid_Membre = new System.Windows.Forms.DataGridView();
+            this.NUM_LICENCE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NUM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOM_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PRENOM_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DATE_NAISSANCE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ADR_RUE_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODE_POST_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ADR_VILLE_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.Txt_Ville = new System.Windows.Forms.TextBox();
@@ -53,19 +60,16 @@ namespace PROJET_PPE2._1_KARATE
             this.Txt_NumLiscence = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Btn_Refresh = new System.Windows.Forms.Button();
-            this.NUM_LICENCE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NUM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOM_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRENOM_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATE_NAISSANCE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ADR_RUE_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CODE_POST_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ADR_VILLE_MEMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).BeginInit();
             this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBox1
@@ -88,16 +92,6 @@ namespace PROJET_PPE2._1_KARATE
             this.Label1.Size = new System.Drawing.Size(642, 29);
             this.Label1.TabIndex = 10;
             this.Label1.Text = "GESTION DES MEMBRES [MODIFIER / SUPPRIMER]";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Location = new System.Drawing.Point(12, 83);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(254, 58);
-            this.groupBox2.TabIndex = 16;
-            this.groupBox2.TabStop = false;
             // 
             // groupBox3
             // 
@@ -130,6 +124,62 @@ namespace PROJET_PPE2._1_KARATE
             this.Grid_Membre.TabIndex = 22;
             this.Grid_Membre.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // NUM_LICENCE
+            // 
+            this.NUM_LICENCE.HeaderText = "NUM_LICENCE";
+            this.NUM_LICENCE.MinimumWidth = 6;
+            this.NUM_LICENCE.Name = "NUM_LICENCE";
+            this.NUM_LICENCE.Width = 125;
+            // 
+            // NUM_CLUB
+            // 
+            this.NUM_CLUB.HeaderText = "NUM_CLUB";
+            this.NUM_CLUB.MinimumWidth = 6;
+            this.NUM_CLUB.Name = "NUM_CLUB";
+            this.NUM_CLUB.Width = 125;
+            // 
+            // NOM_MEMBRE
+            // 
+            this.NOM_MEMBRE.HeaderText = "NOM_MEMBRE";
+            this.NOM_MEMBRE.MinimumWidth = 6;
+            this.NOM_MEMBRE.Name = "NOM_MEMBRE";
+            this.NOM_MEMBRE.Width = 125;
+            // 
+            // PRENOM_MEMBRE
+            // 
+            this.PRENOM_MEMBRE.HeaderText = "PRENOM_MEMBRE";
+            this.PRENOM_MEMBRE.MinimumWidth = 6;
+            this.PRENOM_MEMBRE.Name = "PRENOM_MEMBRE";
+            this.PRENOM_MEMBRE.Width = 125;
+            // 
+            // DATE_NAISSANCE
+            // 
+            this.DATE_NAISSANCE.HeaderText = "DATE_NAISSANCE";
+            this.DATE_NAISSANCE.MinimumWidth = 6;
+            this.DATE_NAISSANCE.Name = "DATE_NAISSANCE";
+            this.DATE_NAISSANCE.Width = 125;
+            // 
+            // ADR_RUE_MEMBRE
+            // 
+            this.ADR_RUE_MEMBRE.HeaderText = "ADR_RUE_MEMBRE";
+            this.ADR_RUE_MEMBRE.MinimumWidth = 6;
+            this.ADR_RUE_MEMBRE.Name = "ADR_RUE_MEMBRE";
+            this.ADR_RUE_MEMBRE.Width = 125;
+            // 
+            // CODE_POST_MEMBRE
+            // 
+            this.CODE_POST_MEMBRE.HeaderText = "CODE_POST_MEMBRE";
+            this.CODE_POST_MEMBRE.MinimumWidth = 6;
+            this.CODE_POST_MEMBRE.Name = "CODE_POST_MEMBRE";
+            this.CODE_POST_MEMBRE.Width = 125;
+            // 
+            // ADR_VILLE_MEMBRE
+            // 
+            this.ADR_VILLE_MEMBRE.HeaderText = "ADR_VILLE_MEMBRE";
+            this.ADR_VILLE_MEMBRE.MinimumWidth = 6;
+            this.ADR_VILLE_MEMBRE.Name = "ADR_VILLE_MEMBRE";
+            this.ADR_VILLE_MEMBRE.Width = 125;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label12);
@@ -150,7 +200,7 @@ namespace PROJET_PPE2._1_KARATE
             this.groupBox5.Controls.Add(this.Txt_NumLiscence);
             this.groupBox5.Controls.Add(this.button3);
             this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Location = new System.Drawing.Point(1258, 83);
+            this.groupBox5.Location = new System.Drawing.Point(1268, 90);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -314,83 +364,54 @@ namespace PROJET_PPE2._1_KARATE
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Btn_Refresh
+            // groupBox4
             // 
-            this.Btn_Refresh.BackgroundImage = global::PROJET_PPE2._1_KARATE.Properties.Resources.refresh;
-            this.Btn_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btn_Refresh.Location = new System.Drawing.Point(359, 98);
-            this.Btn_Refresh.Name = "Btn_Refresh";
-            this.Btn_Refresh.Size = new System.Drawing.Size(73, 57);
-            this.Btn_Refresh.TabIndex = 22;
-            this.Btn_Refresh.UseVisualStyleBackColor = true;
-            this.Btn_Refresh.Click += new System.EventHandler(this.Btn_Refresh_Click);
+            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Location = new System.Drawing.Point(786, 499);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(451, 403);
+            this.groupBox4.TabIndex = 22;
+            this.groupBox4.TabStop = false;
             // 
-            // NUM_LICENCE
+            // dataGridView1
             // 
-            this.NUM_LICENCE.HeaderText = "NUM_LICENCE";
-            this.NUM_LICENCE.MinimumWidth = 6;
-            this.NUM_LICENCE.Name = "NUM_LICENCE";
-            this.NUM_LICENCE.Width = 125;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.NOM_CLUB});
+            this.dataGridView1.Location = new System.Drawing.Point(20, 29);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(412, 345);
+            this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // NUM_CLUB
+            // dataGridViewTextBoxColumn1
             // 
-            this.NUM_CLUB.HeaderText = "NUM_CLUB";
-            this.NUM_CLUB.MinimumWidth = 6;
-            this.NUM_CLUB.Name = "NUM_CLUB";
-            this.NUM_CLUB.Width = 125;
+            this.dataGridViewTextBoxColumn1.HeaderText = "NUM_CLUB";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // NOM_MEMBRE
+            // NOM_CLUB
             // 
-            this.NOM_MEMBRE.HeaderText = "NOM_MEMBRE";
-            this.NOM_MEMBRE.MinimumWidth = 6;
-            this.NOM_MEMBRE.Name = "NOM_MEMBRE";
-            this.NOM_MEMBRE.Width = 125;
-            // 
-            // PRENOM_MEMBRE
-            // 
-            this.PRENOM_MEMBRE.HeaderText = "PRENOM_MEMBRE";
-            this.PRENOM_MEMBRE.MinimumWidth = 6;
-            this.PRENOM_MEMBRE.Name = "PRENOM_MEMBRE";
-            this.PRENOM_MEMBRE.Width = 125;
-            // 
-            // DATE_NAISSANCE
-            // 
-            this.DATE_NAISSANCE.HeaderText = "DATE_NAISSANCE";
-            this.DATE_NAISSANCE.MinimumWidth = 6;
-            this.DATE_NAISSANCE.Name = "DATE_NAISSANCE";
-            this.DATE_NAISSANCE.Width = 125;
-            // 
-            // ADR_RUE_MEMBRE
-            // 
-            this.ADR_RUE_MEMBRE.HeaderText = "ADR_RUE_MEMBRE";
-            this.ADR_RUE_MEMBRE.MinimumWidth = 6;
-            this.ADR_RUE_MEMBRE.Name = "ADR_RUE_MEMBRE";
-            this.ADR_RUE_MEMBRE.Width = 125;
-            // 
-            // CODE_POST_MEMBRE
-            // 
-            this.CODE_POST_MEMBRE.HeaderText = "CODE_POST_MEMBRE";
-            this.CODE_POST_MEMBRE.MinimumWidth = 6;
-            this.CODE_POST_MEMBRE.Name = "CODE_POST_MEMBRE";
-            this.CODE_POST_MEMBRE.Width = 125;
-            // 
-            // ADR_VILLE_MEMBRE
-            // 
-            this.ADR_VILLE_MEMBRE.HeaderText = "ADR_VILLE_MEMBRE";
-            this.ADR_VILLE_MEMBRE.MinimumWidth = 6;
-            this.ADR_VILLE_MEMBRE.Name = "ADR_VILLE_MEMBRE";
-            this.ADR_VILLE_MEMBRE.Width = 125;
+            this.NOM_CLUB.HeaderText = "NOM_CLUB";
+            this.NOM_CLUB.MinimumWidth = 6;
+            this.NOM_CLUB.Name = "NOM_CLUB";
+            this.NOM_CLUB.Width = 125;
             // 
             // Frm_GestionMembre_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1747, 1055);
-            this.Controls.Add(this.Btn_Refresh);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.GroupBox1);
             this.Name = "Frm_GestionMembre_M";
             this.Text = "Frm_GestionMembre_M";
@@ -401,6 +422,8 @@ namespace PROJET_PPE2._1_KARATE
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,7 +432,6 @@ namespace PROJET_PPE2._1_KARATE
 
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.GroupBox groupBox3;
         internal System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button3;
@@ -431,7 +453,6 @@ namespace PROJET_PPE2._1_KARATE
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Txt_Prenom;
         private System.Windows.Forms.DataGridView Grid_Membre;
-        private System.Windows.Forms.Button Btn_Refresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn NUM_LICENCE;
         private System.Windows.Forms.DataGridViewTextBoxColumn NUM_CLUB;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOM_MEMBRE;
@@ -440,5 +461,9 @@ namespace PROJET_PPE2._1_KARATE
         private System.Windows.Forms.DataGridViewTextBoxColumn ADR_RUE_MEMBRE;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODE_POST_MEMBRE;
         private System.Windows.Forms.DataGridViewTextBoxColumn ADR_VILLE_MEMBRE;
+        internal System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOM_CLUB;
     }
 }

@@ -99,7 +99,24 @@ namespace PROJET_PPE2._1_KARATE
 
         private void Frm_GestionEntraineur_AJ_Load(object sender, EventArgs e)
         {
+            Grid_Membre.Rows.Clear();
+            MySqlConnection conn = connexion.ConnectionBD();
+            conn.Open();
+            string sql2 = "SELECT NUM_CLUB, NOM_CLUB from club";
+            MySqlCommand cmd = new MySqlCommand(sql2, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                string NUM_CLUB = reader["NUM_CLUB"].ToString();
+                string NOM_CLUB = reader["NOM_CLUB"].ToString();
+                Grid_Membre.Rows.Add(NUM_CLUB, NOM_CLUB);
+            }
+        }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int ligne = e.RowIndex;
+            Txt_NumClub.Text = Grid_Membre.Rows[ligne].Cells[0].Value.ToString();
         }
     }
 }

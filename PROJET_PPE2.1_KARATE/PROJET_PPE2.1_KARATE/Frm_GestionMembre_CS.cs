@@ -73,6 +73,11 @@ namespace PROJET_PPE2._1_KARATE
 
         private void Btn_Refresh_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Frm_GestionMembre_CS_Load(object sender, EventArgs e)
+        {
             Grid_Membre.Rows.Clear();
             MySqlConnection conn = connexion.ConnectionBD();
             conn.Open();

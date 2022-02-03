@@ -49,9 +49,15 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.Label1 = new System.Windows.Forms.Label();
+            this.Grid_Membre = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.NUM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBox3
@@ -267,12 +273,52 @@
             this.Label1.TabIndex = 10;
             this.Label1.Text = "GESTION DES MEMBRES [AJOUTER]";
             // 
+            // Grid_Membre
+            // 
+            this.Grid_Membre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Membre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NUM_CLUB,
+            this.NOM_CLUB});
+            this.Grid_Membre.Location = new System.Drawing.Point(20, 29);
+            this.Grid_Membre.Name = "Grid_Membre";
+            this.Grid_Membre.RowHeadersWidth = 51;
+            this.Grid_Membre.RowTemplate.Height = 24;
+            this.Grid_Membre.Size = new System.Drawing.Size(381, 345);
+            this.Grid_Membre.TabIndex = 16;
+            this.Grid_Membre.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.Grid_Membre);
+            this.groupBox4.Location = new System.Drawing.Point(746, 55);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(497, 403);
+            this.groupBox4.TabIndex = 17;
+            this.groupBox4.TabStop = false;
+            // 
+            // NUM_CLUB
+            // 
+            this.NUM_CLUB.HeaderText = "NUM_CLUB";
+            this.NUM_CLUB.MinimumWidth = 6;
+            this.NUM_CLUB.Name = "NUM_CLUB";
+            this.NUM_CLUB.Width = 125;
+            // 
+            // NOM_CLUB
+            // 
+            this.NOM_CLUB.HeaderText = "NOM_CLUB";
+            this.NOM_CLUB.MinimumWidth = 6;
+            this.NOM_CLUB.Name = "NOM_CLUB";
+            this.NOM_CLUB.Width = 125;
+            // 
             // Frm_GestionEntraineur_AJ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1314, 629);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.GroupBox3);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.GroupBox1);
@@ -285,6 +331,8 @@
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -312,5 +360,9 @@
         internal System.Windows.Forms.TextBox Txt_NumClub;
         internal System.Windows.Forms.TextBox Txt_NumLicence;
         internal System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView Grid_Membre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NUM_CLUB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOM_CLUB;
+        internal System.Windows.Forms.GroupBox groupBox4;
     }
 }
