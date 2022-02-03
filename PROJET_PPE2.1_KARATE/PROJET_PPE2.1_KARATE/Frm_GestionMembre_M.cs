@@ -88,13 +88,13 @@ namespace PROJET_PPE2._1_KARATE
             //Ces lignes de codes permettent 
             int ligne = e.RowIndex;
             Txt_NumLiscence.Text = Grid_Membre.Rows[ligne].Cells[0].Value.ToString();
-            Txt_NumClub.Text = Grid_Membre.Rows[ligne].Cells[1].Value.ToString(); ;
-            Txt_Nom.Text = Grid_Membre.Rows[ligne].Cells[2].Value.ToString(); ;
-            Txt_Prenom.Text = Grid_Membre.Rows[ligne].Cells[3].Value.ToString(); ;
+            Txt_NumClub.Text = Grid_Membre.Rows[ligne].Cells[1].Value.ToString(); 
+            Txt_Nom.Text = Grid_Membre.Rows[ligne].Cells[2].Value.ToString(); 
+            Txt_Prenom.Text = Grid_Membre.Rows[ligne].Cells[3].Value.ToString(); 
             Txt_DateNaissance.Text = Grid_Membre.Rows[ligne].Cells[4].Value.ToString();
-            Txt_Adresse.Text = Grid_Membre.Rows[ligne].Cells[5].Value.ToString(); ;
-            Txt_CodePostal.Text = Grid_Membre.Rows[ligne].Cells[6].Value.ToString(); ;
-            Txt_Ville.Text = Grid_Membre.Rows[ligne].Cells[7].Value.ToString(); ;
+            Txt_Adresse.Text = Grid_Membre.Rows[ligne].Cells[5].Value.ToString(); 
+            Txt_CodePostal.Text = Grid_Membre.Rows[ligne].Cells[6].Value.ToString(); 
+            Txt_Ville.Text = Grid_Membre.Rows[ligne].Cells[7].Value.ToString();
 
             //MessageBox.Show("TEST", Grid_Membre.Rows[1].Cells[1].Value.ToString());
         }

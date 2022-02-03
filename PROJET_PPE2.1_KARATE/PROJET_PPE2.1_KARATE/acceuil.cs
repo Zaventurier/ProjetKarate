@@ -34,10 +34,11 @@ namespace PROJET_PPE2._1_KARATE
         }
 
 
-        //Bouton consultation des données
+        //Bouton consultation des licences
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("La consultation des liscences n'est pas disponible");
+            Frm_GestionMembre_CS frm = new Frm_GestionMembre_CS();
+            frm.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
