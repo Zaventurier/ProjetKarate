@@ -127,7 +127,7 @@ namespace PROJET_PPE2._1_KARATE
         {
             MySqlConnection conn2 = connexion.ConnectionBD();
             conn2.Open();
-            string req2 = "UPDATE membre SET Colonne1 = @NumLicence, Colonne2 = @NumClub, Colonne3 = @NomMembre, Colonne4 = @PrenomMembre, Colonne5 = @DateNaissance, Colonne6 = @AdresseMembre, Colonne7 = @CodePostal, Colonne8 = @VilleMembre";
+            string req2 = "UPDATE membre SET NOM_MEMBRE = @NomMembre, PRENOM_MEMBRE = @PrenomMembre, DATE_NAISSANCE = @DateNaissance, ADR_RUE_MEMBRE = @AdresseMembre, CODE_POST_MEMBRE = @CodePostal, ADR_VILLE_MEMBRE = @VilleMembre where NUM_LICENCE = @NumLicence ";
             MySqlCommand cmd = new MySqlCommand(req2, conn2);
             cmd.Parameters.AddWithValue("@NumLicence", Txt_NumLiscence.Text);
             cmd.Parameters.AddWithValue("@NumClub", Txt_NumClub.Text);
