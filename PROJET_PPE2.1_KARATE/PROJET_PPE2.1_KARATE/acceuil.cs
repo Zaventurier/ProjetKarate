@@ -50,5 +50,34 @@ namespace PROJET_PPE2._1_KARATE
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            
+            
+        }
+
+        private void aJOUTERToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GestionEntraineur_AJ aj = new Frm_GestionEntraineur_AJ();
+            aj.ShowDialog();
+        }
+
+        private void mODIFIERSUPPRIMERToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GestionMembre_M ms = new Frm_GestionMembre_M();
+            ms.ShowDialog();
+        }
+
+        private void cONSULTERLESLICENCESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_GestionMembre_CS cs = new Frm_GestionMembre_CS();
+            cs.ShowDialog();
+        }
+
+        private void fERMERAPPLICATIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

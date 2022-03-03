@@ -31,17 +31,19 @@ namespace PROJET_PPE2._1_KARATE
         {
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.Label1 = new System.Windows.Forms.Label();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aJOUTERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mODIFIERSUPPRIMERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTERLESLICENCESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fERMERAPPLICATIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GroupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBox1
             // 
             this.GroupBox1.Controls.Add(this.Label1);
-            this.GroupBox1.Location = new System.Drawing.Point(149, 34);
+            this.GroupBox1.Location = new System.Drawing.Point(159, 182);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -53,55 +55,54 @@ namespace PROJET_PPE2._1_KARATE
             // 
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(13, 18);
+            this.Label1.Location = new System.Drawing.Point(26, 17);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(454, 29);
             this.Label1.TabIndex = 10;
             this.Label1.Text = "GESTION DES MEMBRES - ACCEUIL";
             // 
-            // Button1
+            // menuStrip1
             // 
-            this.Button1.Location = new System.Drawing.Point(149, 148);
-            this.Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(178, 34);
-            this.Button1.TabIndex = 15;
-            this.Button1.Text = "AJOUTER";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aJOUTERToolStripMenuItem,
+            this.mODIFIERSUPPRIMERToolStripMenuItem,
+            this.cONSULTERLESLICENCESToolStripMenuItem,
+            this.fERMERAPPLICATIONToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.TabIndex = 20;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // button2
+            // aJOUTERToolStripMenuItem
             // 
-            this.button2.Location = new System.Drawing.Point(305, 186);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 46);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "CONSULTER LES LISCENCES";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.aJOUTERToolStripMenuItem.Name = "aJOUTERToolStripMenuItem";
+            this.aJOUTERToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.aJOUTERToolStripMenuItem.Text = "AJOUTER";
+            this.aJOUTERToolStripMenuItem.Click += new System.EventHandler(this.aJOUTERToolStripMenuItem_Click);
             // 
-            // button4
+            // mODIFIERSUPPRIMERToolStripMenuItem
             // 
-            this.button4.Location = new System.Drawing.Point(438, 148);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 34);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "MODIFIER / SUPPRIMER";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.mODIFIERSUPPRIMERToolStripMenuItem.Name = "mODIFIERSUPPRIMERToolStripMenuItem";
+            this.mODIFIERSUPPRIMERToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.mODIFIERSUPPRIMERToolStripMenuItem.Text = "MODIFIER/SUPPRIMER";
+            this.mODIFIERSUPPRIMERToolStripMenuItem.Click += new System.EventHandler(this.mODIFIERSUPPRIMERToolStripMenuItem_Click);
             // 
-            // button5
+            // cONSULTERLESLICENCESToolStripMenuItem
             // 
-            this.button5.Location = new System.Drawing.Point(305, 389);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(178, 34);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "FERMER";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.cONSULTERLESLICENCESToolStripMenuItem.Name = "cONSULTERLESLICENCESToolStripMenuItem";
+            this.cONSULTERLESLICENCESToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.cONSULTERLESLICENCESToolStripMenuItem.Text = "CONSULTER LES LICENCES";
+            this.cONSULTERLESLICENCESToolStripMenuItem.Click += new System.EventHandler(this.cONSULTERLESLICENCESToolStripMenuItem_Click);
+            // 
+            // fERMERAPPLICATIONToolStripMenuItem
+            // 
+            this.fERMERAPPLICATIONToolStripMenuItem.Name = "fERMERAPPLICATIONToolStripMenuItem";
+            this.fERMERAPPLICATIONToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.fERMERAPPLICATIONToolStripMenuItem.Text = "FERMER APPLICATION";
+            this.fERMERAPPLICATIONToolStripMenuItem.Click += new System.EventHandler(this.fERMERAPPLICATIONToolStripMenuItem_Click);
             // 
             // acceuil
             // 
@@ -109,17 +110,18 @@ namespace PROJET_PPE2._1_KARATE
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Button1);
             this.Controls.Add(this.GroupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "acceuil";
             this.Text = "acceuil";
             this.Load += new System.EventHandler(this.acceuil_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,9 +129,10 @@ namespace PROJET_PPE2._1_KARATE
 
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.Button button2;
-        internal System.Windows.Forms.Button button4;
-        internal System.Windows.Forms.Button button5;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aJOUTERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mODIFIERSUPPRIMERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTERLESLICENCESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fERMERAPPLICATIONToolStripMenuItem;
     }
 }
