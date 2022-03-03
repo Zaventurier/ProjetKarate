@@ -53,6 +53,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.NUM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VILLE_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
@@ -278,12 +279,13 @@
             this.Grid_Membre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Membre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NUM_CLUB,
-            this.NOM_CLUB});
+            this.NOM_CLUB,
+            this.VILLE_CLUB});
             this.Grid_Membre.Location = new System.Drawing.Point(20, 29);
             this.Grid_Membre.Name = "Grid_Membre";
             this.Grid_Membre.RowHeadersWidth = 51;
             this.Grid_Membre.RowTemplate.Height = 24;
-            this.Grid_Membre.Size = new System.Drawing.Size(381, 345);
+            this.Grid_Membre.Size = new System.Drawing.Size(505, 345);
             this.Grid_Membre.TabIndex = 16;
             this.Grid_Membre.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -294,7 +296,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(497, 403);
+            this.groupBox4.Size = new System.Drawing.Size(556, 403);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             // 
@@ -311,6 +313,13 @@
             this.NOM_CLUB.MinimumWidth = 6;
             this.NOM_CLUB.Name = "NOM_CLUB";
             this.NOM_CLUB.Width = 125;
+            // 
+            // VILLE_CLUB
+            // 
+            this.VILLE_CLUB.HeaderText = "VILLE_CLUB";
+            this.VILLE_CLUB.MinimumWidth = 6;
+            this.VILLE_CLUB.Name = "VILLE_CLUB";
+            this.VILLE_CLUB.Width = 125;
             // 
             // Frm_GestionEntraineur_AJ
             // 
@@ -361,8 +370,9 @@
         internal System.Windows.Forms.TextBox Txt_NumLicence;
         internal System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView Grid_Membre;
+        internal System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridViewTextBoxColumn NUM_CLUB;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOM_CLUB;
-        internal System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VILLE_CLUB;
     }
 }

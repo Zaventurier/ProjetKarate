@@ -105,14 +105,15 @@ namespace PROJET_PPE2._1_KARATE
             dataGridView1.Rows.Clear();
             MySqlConnection conn3 = connexion.ConnectionBD();
             conn3.Open();
-            string sql3 = "SELECT NUM_CLUB, NOM_CLUB from club";
+            string sql3 = "SELECT NUM_CLUB, NOM_CLUB, ADR_VILLE_CLUB from club";
             MySqlCommand cmd2 = new MySqlCommand(sql3, conn3);
             MySqlDataReader reader1 = cmd2.ExecuteReader();
             while (reader1.Read())
             {
                 string NUM_CLUB = reader1["NUM_CLUB"].ToString();
                 string NOM_CLUB = reader1["NOM_CLUB"].ToString();
-                dataGridView1.Rows.Add(NUM_CLUB, NOM_CLUB);
+                string VILLE_CLUB = reader1["ADR_VILLE_CLUB"].ToString();
+                dataGridView1.Rows.Add(NUM_CLUB, NOM_CLUB, VILLE_CLUB);
             }
             conn3.Close();
         }

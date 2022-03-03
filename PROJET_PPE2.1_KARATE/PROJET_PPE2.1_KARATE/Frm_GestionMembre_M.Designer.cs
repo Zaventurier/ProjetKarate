@@ -64,6 +64,7 @@ namespace PROJET_PPE2._1_KARATE
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOM_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VILLE_CLUB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Membre)).BeginInit();
@@ -367,11 +368,11 @@ namespace PROJET_PPE2._1_KARATE
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Location = new System.Drawing.Point(786, 499);
+            this.groupBox4.Location = new System.Drawing.Point(622, 499);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(451, 403);
+            this.groupBox4.Size = new System.Drawing.Size(615, 403);
             this.groupBox4.TabIndex = 22;
             this.groupBox4.TabStop = false;
             // 
@@ -380,12 +381,13 @@ namespace PROJET_PPE2._1_KARATE
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.NOM_CLUB});
+            this.NOM_CLUB,
+            this.VILLE_CLUB});
             this.dataGridView1.Location = new System.Drawing.Point(20, 29);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(412, 345);
+            this.dataGridView1.Size = new System.Drawing.Size(549, 345);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -402,6 +404,13 @@ namespace PROJET_PPE2._1_KARATE
             this.NOM_CLUB.MinimumWidth = 6;
             this.NOM_CLUB.Name = "NOM_CLUB";
             this.NOM_CLUB.Width = 125;
+            // 
+            // VILLE_CLUB
+            // 
+            this.VILLE_CLUB.HeaderText = "VILLE_CLUB";
+            this.VILLE_CLUB.MinimumWidth = 6;
+            this.VILLE_CLUB.Name = "VILLE_CLUB";
+            this.VILLE_CLUB.Width = 125;
             // 
             // Frm_GestionMembre_M
             // 
@@ -465,5 +474,6 @@ namespace PROJET_PPE2._1_KARATE
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOM_CLUB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VILLE_CLUB;
     }
 }

@@ -102,14 +102,15 @@ namespace PROJET_PPE2._1_KARATE
             Grid_Membre.Rows.Clear();
             MySqlConnection conn = connexion.ConnectionBD();
             conn.Open();
-            string sql2 = "SELECT NUM_CLUB, NOM_CLUB from club";
+            string sql2 = "SELECT NUM_CLUB, NOM_CLUB, ADR_VILLE_CLUB from club";
             MySqlCommand cmd = new MySqlCommand(sql2, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 string NUM_CLUB = reader["NUM_CLUB"].ToString();
                 string NOM_CLUB = reader["NOM_CLUB"].ToString();
-                Grid_Membre.Rows.Add(NUM_CLUB, NOM_CLUB);
+                string VILLE_CLUB = reader["ADR_VILLE_CLUB"].ToString();
+                Grid_Membre.Rows.Add(NUM_CLUB, NOM_CLUB, VILLE_CLUB);
             }
         }
 
